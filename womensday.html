@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Women's Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes scaleUp {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #ff6bcb; }
+            50% { text-shadow: 0 0 15px #ff6bcb; }
+            100% { text-shadow: 0 0 5px #ff6bcb; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        .bounce {
+            animation: bounce 1s infinite;
+        }
+        .scale-up {
+            animation: scaleUp 0.8s ease-out;
+        }
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-pink-100 text-gray-800">
+    <header class="text-center py-10 bg-pink-600 text-white font-bold text-4xl fade-in bounce glow">
+        🌸 Happy International Women's Day! 🌸
+    </header>
+    
+    <section class="text-center p-10 fade-in scale-up">
+        <h2 class="text-3xl font-semibold text-pink-700 glow">Celebrating Women Everywhere</h2>
+        <p class="mt-4 text-lg float">Today, we honor the strength, resilience, and achievements of women all around the world. You are powerful, beautiful, and unstoppable! 💜</p>
+    </section>
+    
+    <section class="p-10 fade-in scale-up">
+        <h2 class="text-center text-3xl font-semibold text-pink-700 glow">💖 What Girls Love 💖</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-transform transform hover:scale-110 float">
+                <h3 class="text-xl font-bold text-pink-600">Fashion & Style</h3>
+                <p class="mt-2">Express yourself through fashion and embrace your unique style! ✨</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-transform transform hover:scale-110 float">
+                <h3 class="text-xl font-bold text-pink-600">Books & Empowerment</h3>
+                <p class="mt-2">Read inspiring books and empower yourself with knowledge! 📚</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-transform transform hover:scale-110 float">
+                <h3 class="text-xl font-bold text-pink-600">Self-Care & Wellness</h3>
+                <p class="mt-2">Take care of your body and mind—self-love is important! 💆‍♀️</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="text-center py-6 bg-pink-600 text-white mt-10 fade-in bounce glow">
+        Made with ❤️ to celebrate Women Everywhere!
+    </footer>
+</body>
+</html>
+
+
